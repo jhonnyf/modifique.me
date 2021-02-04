@@ -4,10 +4,10 @@ on:
     branches:
     - master    
 jobs:
-  build:
-    environment: production   
+  build:    
     runs-on: ubuntu-latest
-    
-    steps:
       
+    environment: production
+    steps:
+    
     - name: Checkout source code
