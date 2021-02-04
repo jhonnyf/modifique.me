@@ -1,29 +1,15 @@
 name: Deploy master
 on:
   push:
-    branches:
-    - master    
+    branches: [ master ]    
 jobs:
   build:  
     runs-on: ubuntu-latest
     
-    steps:
-      - name: Teste
-        run: echo "teste ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
-      
+    steps:      
       - name: Checkout source code      
-        uses: actions/checkout@v1
-
-      - name: Generate deployment package
-        run: zip -r deploy.zip . -x '*.git*'
+        uses: actions/checkout@v2
       
-      - name: Deploy to EB
-        uses: einaregilsson/beanstalk-deploy@v14
-        with:
-          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          application_name: ${{ secrets.APPLICATION_NAME }}
-          environment_name: ${{ secrets.ENVIRONMENT_NAME }}
-          version_label: ${GITHUB_RUN_NUMBER}
-          region: ${{ secrets.AWS_DEFAULT_REGION }}
-          deployment_package: deploy.zip
+      - name: Teste
+        run: npm run production  
+    
