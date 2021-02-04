@@ -1,10 +1,27 @@
-name: Beanstalk Deploy
-  # You may pin to the exact commit or the version.
-  # uses: einaregilsson/beanstalk-deploy@51975e958fd587756b6dc8a299d94cc16128af2f
-  uses: einaregilsson/beanstalk-deploy@v14
-  with:
-    aws_access_key: ${{secrets.AWS_ACCESS_KEY_ID}}
-    aws_secret_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}    
-    region: ${{secrets.AWS_DEFAULT_REGION}}    
-    application_name: ${{secrets.APPLICATION_NAME}}    
-    environment_name: ${{secrets.ENVIRONMENT_NAME}}        
+name: Deploy master
+on:
+  push:
+    branches:
+    - master
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    
+    - name: Checkout source code
+      uses: actions/checkout@v1
+
+    - name: Generate deployment package
+      run: zip -r deploy.zip . -x '*.git*'
+      
+    - name: Deploy to EB
+      uses: einaregilsson/beanstalk-deploy@v14
+      with:
+        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        application_name: ${{secrets.APPLICATION_NAME}}
+        environment_name: ${{secrets.ENVIRONMENT_NAME}}
+        version_label: 12345
+        region: ${{secrets.AWS_DEFAULT_REGION}}
+        deployment_package: deploy.zip
