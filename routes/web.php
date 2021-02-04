@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ModifyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('', [ModifyController::class, 'index']);
+Route::post('change', [ModifyController::class, 'change'])->name('modify.change');
