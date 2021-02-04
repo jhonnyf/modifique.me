@@ -5,8 +5,9 @@ on:
     - master    
 jobs:
   build:
+    environment: production   
     runs-on: ubuntu-latest
-    environment: production
+    
     steps:
       
     - name: Checkout source code
