@@ -9,4 +9,4 @@ jobs:
     steps:
       
       - name: Generate deployment package
-        run: echo teste
+        run: ${{secrets.AWS_ACCESS_KEY_ID}}
