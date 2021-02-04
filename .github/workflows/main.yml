@@ -9,7 +9,7 @@ jobs:
     
     steps:
       - name: Teste
-        run: echo "teste ${secrets.AWS_DEFAULT_REGION}"
+        run: echo "teste ${{ secrets.AWS_DEFAULT_REGION }}"
       
       - name: Checkout source code      
         uses: actions/checkout@v1
