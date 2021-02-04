@@ -9,4 +9,4 @@ jobs:
     environment: production
     steps:      
       - name: Generate deployment package
-        run: echo "Deploying to production server on branch ${{ env.AWS_ACCESS_KEY_ID }} - ${{ secrets.AWS_ACCESS_KEY_ID }}"
+        run: echo "Deploying to production server on branch ${{ secrets.AWS_DEFAULT_REGION }} - ${{ secrets.AWS_ACCESS_KEY_ID }}"
