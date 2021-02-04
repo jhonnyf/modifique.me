@@ -8,7 +8,7 @@ jobs:
     
     steps:
       - name: Variaveis
-        run: echo ">> ${{ secrets.AWS_DEFAULT_REGION }}"
+        run: echo ">> ${{ secrets.AWS_DEFAULT_REGION }} - >> ${{ env.APPLICATION_NAME }}"
         
       - name: Checkout source code      
         uses: actions/checkout@v2
