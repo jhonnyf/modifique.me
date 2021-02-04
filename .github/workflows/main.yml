@@ -9,4 +9,4 @@ jobs:
     environment: production
     steps:      
       - name: Generate deployment package
-        run: $GITHUB_RUN_NUMBER
+        run: ${{ GITHUB_RUN_NUMBER }}
