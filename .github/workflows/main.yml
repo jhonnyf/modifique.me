@@ -1,6 +1,4 @@
 name: Deploy master
-env:
-  SERVER: production
 on:
   push:
     branches:
