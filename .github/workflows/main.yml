@@ -1,9 +1,10 @@
 name: Deploy master
+env:
+  SERVER: production
 on:
   push:
     branches:
-    - master
-    
+    - master    
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,6 +17,7 @@ jobs:
       run: zip -r deploy.zip . -x '*.git*'
       
     - name: Deploy to EB
+      env: production
       uses: einaregilsson/beanstalk-deploy@v14
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
