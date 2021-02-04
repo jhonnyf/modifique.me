@@ -6,7 +6,10 @@ jobs:
   build:  
     runs-on: ubuntu-latest
     
-    steps:      
+    steps:
+      - name: Variaveis
+        run: echo ">> ${{ secrets.AWS_DEFAULT_REGION }}"
+        
       - name: Checkout source code      
         uses: actions/checkout@v2
       
