@@ -7,7 +7,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    
+    - name: Deployed!
+      run: echo App deployed to ELB ${{ secrets.AWS_ACCESS_KEY_ID }}
+      
     - name: Checkout source code
       uses: actions/checkout@v1
 
