@@ -13,5 +13,8 @@ jobs:
       - name: Executa o NPM
         run: | 
           npm install
-          npm run production  
+          npm run production
+      
+      - name: Generate deployment package
+        run: zip -r deploy.zip . -x '*.git*'
     
