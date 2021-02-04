@@ -9,4 +9,4 @@ jobs:
     environment: production
     steps:      
       - name: Generate deployment package
-        run: echo "Deploying to production server on branch ${GITHUB_RUN_ID}"
+        run: echo "Deploying to production server on branch ${GITHUB_RUN_NUMBER}"
