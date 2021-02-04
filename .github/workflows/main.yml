@@ -6,7 +6,7 @@ on:
 jobs:
   build:    
     runs-on: ubuntu-latest
-    steps:
-      
+    environment: production
+    steps:      
       - name: Generate deployment package
-        run: ${{secrets.AWS_ACCESS_KEY_ID}}
+        run: ${{ secrets.AWS_ACCESS_KEY_ID }} - ${{ env.AWS_ACCESS_KEY_ID }}
