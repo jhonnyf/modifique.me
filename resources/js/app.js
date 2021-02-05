@@ -11,9 +11,10 @@ $(document).on('submit', '.form-ajax', function () {
             response = response.data;
 
             if (response.error) {
-                
-            }else{
-                $( ".response-ajax" ).prepend( response.result );
+
+            } else {
+                $(".response-ajax").prepend(response.result);                
+                new ClipboardJS('.btn-copy');
             }
         });
 

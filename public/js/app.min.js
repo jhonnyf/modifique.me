@@ -1853,6 +1853,7 @@ $(document).on('submit', '.form-ajax', function () {
 
     if (response.error) {} else {
       $(".response-ajax").prepend(response.result);
+      new ClipboardJS('.btn-copy');
     }
   });
   return false;
