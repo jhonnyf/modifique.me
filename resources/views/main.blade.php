@@ -11,6 +11,13 @@
             <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">    
         @endif
         <title>Modifique.me!</title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTKNL7MYFB"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-NTKNL7MYFB');
+        </script>
     </head>
   <body>
     @include('header')
