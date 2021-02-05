@@ -7,4 +7,4 @@ mix.combine([
 ], 'public/js/vendor.js').minify('public/js/vendor.js');
 
 mix.js('resources/js/app.js', 'public/js/app.js').minify('public/js/app.js');
-mix.postCss('resources/css/app.css', 'public/css/app.css').minify('public/css/app.css');
+mix.sass('resources/scss/app.scss', 'public/css/app.css').minify('public/css/app.css');

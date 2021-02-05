@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('', [ModifyController::class, 'index']);
+Route::get('', [ModifyController::class, 'index'])->name('modify.home');
 Route::post('change', [ModifyController::class, 'change'])->name('modify.change');

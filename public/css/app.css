@@ -1,1 +1,20 @@
+body {
+  background-color: #e8e8e8;
+}
 
+header {
+  background-color: #222831;
+}
+header .navbar-brand {
+  color: #e8e8e8;
+}
+
+.info {
+  background-color: #30475e;
+  color: #e8e8e8;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+.info .title {
+  margin-bottom: 30px;
+}

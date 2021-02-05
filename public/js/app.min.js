@@ -19055,10 +19055,10 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
-/***/ "./resources/css/app.css":
-/*!*******************************!*\
-  !*** ./resources/css/app.css ***!
-  \*******************************/
+/***/ "./resources/scss/app.scss":
+/*!*********************************!*\
+  !*** ./resources/scss/app.scss ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19347,7 +19347,7 @@ process.umask = function() { return 0; };
 /******/ 		
 /******/ 		var deferredModules = [
 /******/ 			["./resources/js/app.js"],
-/******/ 			["./resources/css/app.css"]
+/******/ 			["./resources/scss/app.scss"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
 /******/ 		

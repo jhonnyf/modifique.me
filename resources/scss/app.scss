@@ -1,0 +1,31 @@
+$cinza: #e8e8e8;
+$vermelho: #f05454;
+$azul: #30475e;
+$azul-escuro: #222831;
+
+body{
+    background-color: $cinza;
+}
+
+header{
+    background-color: $azul-escuro;
+
+    .navbar-brand{
+        color: $cinza;
+    }
+}
+
+.info{
+    background-color: $azul;
+    color: $cinza;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+    .title{
+        margin-bottom: 30px;
+    }
+
+    .paragraph{
+        
+    }
+}
