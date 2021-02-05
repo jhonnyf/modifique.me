@@ -4,17 +4,17 @@
 
     <div class="container-fluid">
         <div class="row">            
-            <section class="col-3 info">            
+            <section class="col-md-3 info">            
                 <h1 class="title">O que é o modifique.me?</h1>
                 <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non justo interdum leo blandit feugiat. Nullam a arcu pulvinar massa sagittis laoreet. Etiam sit amet risus urna. Vestibulum fermentum interdum venenatis. 
                     Phasellus viverra sit amet ligula non aliquet. Pellentesque justo justo, tincidunt in eros nec, feugiat aliquet orci. Nullam et nisl sit amet urna mattis volutpat a at libero. Mauris rhoncus massa elementum orci pharetra, eu gravida felis imperdiet. 
                     Curabitur felis orci, posuere ac rutrum vulputate, ultrices sit amet mi. Cras ullamcorper ante eget suscipit commodo.</p>
             </section>
-            <section class="col-9">
+            <section class="col-md-9">
                 <form action="{{ route('modify.change') }}" class="form-ajax" method="post">
                     @csrf
                     <div class="row">
-                        <div class="col-9">
+                        <div class="col-md-9">
                             <div class="mb-3">
                                 <label for="text" class="form-label">Digite aqui o seu texto</label>
                                 <textarea class="form-control" id="text" rows="5" name="text" required placeholder="Digite aqui o seu texto"></textarea>
@@ -23,7 +23,7 @@
                                 </div>            
                             </div>
                         </div>
-                        <div class="col-3 pt-4">                    
+                        <div class="col-md-3 pt-4">                    
                             <input type="radio" class="btn-check" name="type" value="upper" required id="type1" autocomplete="off">
                             <label class="btn btn-outline-primary mb-2 btn-sm" for="type1" title="Converte para maiúsculas o todos os caracteres">MAIÚSCULAS</label>
         
@@ -40,7 +40,7 @@
                 </form>
                 
                 <div class="row">
-                    <div class="col-9">
+                    <div class="col-md-9">
                         <div class="response-ajax mt-2"></div>
                     </div>
                 </div>
