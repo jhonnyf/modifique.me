@@ -6,9 +6,7 @@
         <div class="row">            
             <section class="col-md-3 info">            
                 <h1 class="title">O que é o modifique.me?</h1>
-                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non justo interdum leo blandit feugiat. Nullam a arcu pulvinar massa sagittis laoreet. Etiam sit amet risus urna. Vestibulum fermentum interdum venenatis. 
-                    Phasellus viverra sit amet ligula non aliquet. Pellentesque justo justo, tincidunt in eros nec, feugiat aliquet orci. Nullam et nisl sit amet urna mattis volutpat a at libero. Mauris rhoncus massa elementum orci pharetra, eu gravida felis imperdiet. 
-                    Curabitur felis orci, posuere ac rutrum vulputate, ultrices sit amet mi. Cras ullamcorper ante eget suscipit commodo.</p>
+                <p class="paragraph">Utilise a nossa plataforma para modificar o seu texto, com a opções ao lado. Divirta-se!</p>
             </section>
             <section class="col-md-9">
                 <form action="{{ route('modify.change') }}" class="form-ajax" method="post">
