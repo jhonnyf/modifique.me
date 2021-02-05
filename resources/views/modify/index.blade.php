@@ -3,6 +3,7 @@
 @section('content')
     <div class="container mt-5">
         <form action="{{ route('modify.change') }}" class="form-ajax" method="post">
+            @csrf
             <div class="row">
                 <div class="col-9">
                     <div class="mb-3">
