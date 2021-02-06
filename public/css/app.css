@@ -1,20 +1,163 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(/fonts/Roboto-Thin.ttf?c38fab23fc1c36894f10dd8014479b53) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/Roboto-Light.ttf?0cea39826bd36bbfe33076c544e3a1af) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Roboto-Regular.ttf?03523cf578d69fa923226ff457b92d90) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/Roboto-Medium.ttf?13a29228654d5c5ec9c482a267efa4af) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/Roboto-Bold.ttf?4f39c5796e60c9d8e7327a00e9a4442e) format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(/fonts/Roboto-Black.ttf?1224b64c95f897e542d9bfdd3861b0ed) format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #e8e8e8;
+  background-color: #212121;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #909090;
+}
+
+.text-right {
+  text-align: right;
 }
 
 header {
-  background-color: #222831;
+  padding: 15px 0;
 }
-header .navbar-brand {
-  color: #e8e8e8;
+header .logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 32px;
 }
 
-.info {
-  background-color: #30475e;
-  color: #e8e8e8;
-  letter-spacing: 2px;
+.publicity-large {
+  background-color: #181818;
+  padding: 30px 0;
+}
+
+main {
+  margin-top: 30px;
+}
+main .about {
+  letter-spacing: 2.5px;
+}
+main .about .title {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+main .about .paragraph {
+  font-size: 20px;
   line-height: 25px;
 }
-.info .title {
-  margin-bottom: 30px;
+main .form-ajax .options {
+  display: flex;
+  justify-content: space-between;
+}
+main .form-ajax .text-input {
+  margin-top: 30px;
+}
+main .form-ajax .text-input #text {
+  width: 100%;
+  background-color: #f0efeb;
+  border: 1px solid #5f6368;
+  padding: 30px;
+  height: 200px;
+  outline: none;
+  font-size: 14px;
+}
+main .form-ajax .submit {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 15px;
+  font-weight: bold;
+  background-color: #383838;
+  border: 1px solid #181818;
+  padding: 10px 15px;
+  font-size: 16px;
+  box-shadow: 0px 0px 5px #181818;
+  color: #909090;
+  cursor: pointer;
+  outline: none;
+}
+main .response-ajax {
+  margin-top: 30px;
+  border-top: 4px solid #303030;
+}
+main .response-ajax .card {
+  border-bottom: 4px solid #303030;
+  padding-bottom: 30px;
+}
+main .response-ajax .card .card-header {
+  text-align: right;
+}
+main .response-ajax .card .card-header .btn-copy {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 15px;
+  font-weight: bold;
+  background-color: #383838;
+  border: 1px solid #181818;
+  padding: 10px 15px;
+  font-size: 10px;
+  box-shadow: 0px 0px 5px #181818;
+  color: #909090;
+  cursor: pointer;
+  outline: none;
+}
+main .response-ajax .card .card-body {
+  margin-top: 15px;
+}
+main .response-ajax .card .card-body .card-text {
+  letter-spacing: 2.5px;
+  line-height: 25px;
+  font-size: 14px;
+}
+
+form .option {
+  background-color: #383838;
+  border: 1px solid #181818;
+  padding: 10px 15px;
+  font-size: 16px;
+  box-shadow: 0px 0px 5px #181818;
+  cursor: pointer;
+}
+
+footer .copyright {
+  text-align: center;
 }

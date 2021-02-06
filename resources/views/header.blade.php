@@ -1,7 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{{ route('modify.home') }}">modifique.me!</a>                  
-        </div>
-    </nav>
+    <div class="container">
+        <a href="{{ route('modify.home') }}" class="logo">modifique.me!</a>
+    </div>
 </header>

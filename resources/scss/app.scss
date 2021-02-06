@@ -1,31 +1,25 @@
-$cinza: #e8e8e8;
-$vermelho: #f05454;
-$azul: #30475e;
-$azul-escuro: #222831;
+@import "fonts/roboto.scss";
+@import "variables.scss";
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
-    background-color: $cinza;
-}
-
-header{
-    background-color: $azul-escuro;
-
-    .navbar-brand{
-        color: $cinza;
-    }
-}
-
-.info{
-    background-color: $azul;
+    background-color: $cinza-escuro;    
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 12px;
     color: $cinza;
-    letter-spacing: 2px;
-    line-height: 25px;
-
-    .title{
-        margin-bottom: 30px;
-    }
-
-    .paragraph{
-        
-    }
 }
+
+.text-right{
+    text-align: right;
+}
+
+@import "header.scss";
+@import "publicity.scss";
+@import "main.scss";
+@import "form.scss";
+@import "footer.scss";
