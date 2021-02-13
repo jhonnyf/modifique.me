@@ -11,7 +11,7 @@
             <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">    
         @endif
         <meta name="language" content="pt-BR">
-        <title>Modifique.me</title>
+        <title>Modifique.me!</title>
         <meta name="description" content="Uma ferramenta pratica e confiável para modificar o seu texto, transformando-o em maiúsculo, minúsculo, e muitas outras funcionalidades">
         <meta name="robots" content="index, follow">
         <meta name="author" content="Jhonny Fialho">
