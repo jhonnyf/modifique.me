@@ -13,7 +13,7 @@
 @section('about')
     <section class="about">
         <h1 class="title">O que é o modifique.me?</h1>
-        <p class="paragraph">Utilize a nossa plataforma para modificar o seu texto, aqui você pode converter seu texto para caracteres maiúsculos, maiúsculos, converter somente o primeiro caract do texto ou até todos os primeiros caractere do seu texto. Divirta-se!</p>
+        <p class="paragraph">Utilize a nossa plataforma para modificar o seu texto, aqui você pode converter seu texto para caracteres maiúsculos, maiúsculos, converter somente o primeiro caractere do texto ou até todos os primeiros caractere do seu texto. Divirta-se!</p>
     </section>
 @endsection
 
