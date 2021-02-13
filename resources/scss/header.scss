@@ -1,9 +1,21 @@
 header{
-    padding: 15px 0;
+    background-color: $white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 10px #bbb;
+    border-bottom: 1px solid #aaa;    
     
-    .logo{
-        text-decoration: none;
-        color: #fff;
-        font-size: 32px;
+    .container{
+        display: flex;
+        align-items: center;
+
+        .logo{        
+            display: block;
+            text-decoration: none;
+            color: $orange;
+            font-size: 36px;
+            font-weight: 300;    
+        }
     }
 }

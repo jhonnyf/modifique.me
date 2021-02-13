@@ -1,11 +1,17 @@
 form{
 
-    .option{
-        background-color: #383838;
-        border: 1px solid $cinza-escuro-II;
-        padding: 10px 15px;
-        font-size: 16px;
-        box-shadow: 0px 0px 5px $cinza-escuro-II;
-        cursor: pointer;
+    input, textarea, button{
+           
     }
+
+    textarea{
+        width: 100%;
+        padding: 15px;
+        height: 250px;
+        color: $grey;
+    }
+
+    button{        
+      border: none;
+    }    
 }
