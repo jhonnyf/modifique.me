@@ -13,4 +13,6 @@ mix.combine([
 mix.js('resources/js/app.js', 'public/js/app.js').minify('public/js/app.js');
 mix.sass('resources/scss/app.scss', 'public/css/app.css').minify('public/css/app.css');
 
+mix.copyDirectory('resources/img/', 'public/img/');
+
 mix.browserSync('laravel.test');
