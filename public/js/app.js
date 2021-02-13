@@ -1859,6 +1859,14 @@ $(document).on('submit', '.form-ajax', function () {
   return false;
 });
 
+function setOption() {
+  var element = $(this);
+  $('.option').removeClass('active');
+  element.addClass('active');
+}
+
+$(document).on('click', '.option', setOption);
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":

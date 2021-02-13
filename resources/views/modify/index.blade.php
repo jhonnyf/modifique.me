@@ -4,9 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <section class="publicity-large">
-                    publicity
-                </section>
+                <section class="publicity-large"></section>
             </div>
         </div>
     </div>    
