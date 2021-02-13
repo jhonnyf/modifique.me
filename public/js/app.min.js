@@ -1866,8 +1866,10 @@ $(document).on('click', '.option', function () {
 $(document).on('click', '.btn-copy', function () {
   var element = $(this);
   element.addClass('copied');
+  element.closest('.card').addClass('copied');
   setTimeout(function () {
     element.removeClass('copied');
+    element.closest('.card').removeClass('copied');
   }, 500);
 });
 
