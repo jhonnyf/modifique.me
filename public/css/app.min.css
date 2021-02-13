@@ -190,6 +190,7 @@ main .response-ajax .card .btn-copy.copied {
 }
 main .response-ajax .card .card-body {
   display: flex;
+  justify-content: space-between;
 }
 main .response-ajax .card .card-body .card-text {
   color: #444;

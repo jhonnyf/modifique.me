@@ -111,6 +111,7 @@ main{
 
             .card-body{
                 display: flex;
+                justify-content: space-between; 
 
                 .card-text{
                     color: $grey;
