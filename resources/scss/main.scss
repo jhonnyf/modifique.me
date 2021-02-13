@@ -91,6 +91,13 @@ main{
 
             &.copied{
                 border-color: $orange;
+                
+                .card-body{
+                    
+                    .card-text{
+                        color: $orange;
+                    }
+                }
             }
 
             .btn-copy{
