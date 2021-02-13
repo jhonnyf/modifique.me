@@ -13,7 +13,7 @@
 @section('about')
     <section class="about">
         <h1 class="title">O que é o modifique.me?</h1>
-        <p class="paragraph">Utilise a nossa plataforma para modificar o seu texto, com a opções ao lado. Divirta-se!</p>
+        <p class="paragraph">Utilize a nossa plataforma para modificar o seu texto, com a opções ao lado. Divirta-se!</p>
     </section>
 @endsection
 
@@ -23,7 +23,7 @@
             
             <div class="options">
                 <label class="option btn" for="upper" title="Converte para maiúsculas o todos os caracteres">
-                    <input type="radio" name="type" value="upper" id="upper" required> maiúsculas
+                    <input type="radio" name="type" value="upper" id="upper" checked required> maiúsculas
                 </label>
 
                 <label class="option btn" for="lower" title="Converte para minusculas o todos os caracteres">

@@ -106,6 +106,14 @@ main .about .paragraph {
   line-height: 24px;
   font-weight: 400;
 }
+main .actions form {
+  margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+  main .actions form {
+    margin-bottom: 20px;
+  }
+}
 main .actions .options {
   display: flex;
   justify-content: space-between;
@@ -134,18 +142,57 @@ main .actions .options input {
 main .actions .text-input {
   margin-bottom: 30px;
 }
+@media (max-width: 800px) {
+  main .actions .text-input {
+    margin-bottom: 20px;
+  }
+}
 main .actions .btn {
   background-color: #c5d7bd;
   padding: 10px 15px 10px 30px;
   cursor: pointer;
   transition: opacity 0.7s ease;
+  letter-spacing: 2px;
+  font-weight: 500;
 }
 main .actions .btn.submit {
   padding: 10px 15px;
+  background-color: #fb743e;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
 main .actions .btn:hover, main .actions .btn.active {
   opacity: 0.7;
   transition: opacity 0.7s ease;
+}
+main .response-ajax .card {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border: 1px solid #999;
+}
+main .response-ajax .card .card-header {
+  text-align: right;
+}
+main .response-ajax .card .card-header .btn-copy {
+  padding: 10px 15px;
+  font-size: 12px;
+  border: none;
+  font-weight: 800;
+  letter-spacing: 2px;
+  transition: background-color 0.5s ease;
+}
+main .response-ajax .card .card-header .btn-copy.copied {
+  background-color: #fb743e;
+  color: #fff;
+  transition: background-color 0.5s ease;
+}
+main .response-ajax .card .card-body {
+  padding: 15px;
+}
+main .response-ajax .card .card-body .card-text {
+  color: #444;
+  opacity: 0.7;
 }
 
 form textarea {
@@ -153,6 +200,7 @@ form textarea {
   padding: 15px;
   height: 250px;
   color: #444;
+  border: 1px solid #999;
 }
 form button {
   border: none;

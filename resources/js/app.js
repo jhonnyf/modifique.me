@@ -21,11 +21,18 @@ $(document).on('submit', '.form-ajax', function () {
     return false;
 });
 
-function setOption() {
+$(document).on('click', '.option', function(){
     let element = $(this);
 
     $('.option').removeClass('active');
     element.addClass('active');
-}
+});
 
-$(document).on('click', '.option', setOption);
+$(document).on('click', '.btn-copy', function(){
+    let element = $(this);
+
+    element.addClass('copied');
+    setTimeout(() => {
+        element.removeClass('copied');
+    }, 500);
+});

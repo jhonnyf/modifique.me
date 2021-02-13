@@ -16,7 +16,14 @@ main{
         }
     }
 
-    .actions{        
+    .actions{           
+        
+        form{
+            margin-bottom: 30px;
+            @media (max-width: 800px) {
+                margin-bottom: 20px;
+            }
+        }        
 
         .options{
             display: flex;
@@ -48,6 +55,9 @@ main{
 
         .text-input{
             margin-bottom: 30px;
+            @media (max-width: 800px) {
+                margin-bottom: 20px;
+            }
         }
 
         .btn{
@@ -55,15 +65,56 @@ main{
             padding: 10px 15px 10px 30px;
             cursor: pointer;
             transition: opacity 0.7s ease;
+            letter-spacing: 2px;
+            font-weight: 500;
 
             &.submit{
                 padding: 10px 15px;
+                background-color: $orange;
+                color: $white;
+                font-weight: 800;
+                letter-spacing: 2px;
             }
 
             &:hover, &.active{
                 opacity: 0.7;
                 transition: opacity 0.7s ease;
             }            
+        }
+    }
+
+    .response-ajax{
+        .card{
+            background-color: $white;
+            margin-bottom: 20px;
+            border: 1px solid #999;
+
+            .card-header{
+                text-align: right;
+
+                .btn-copy{
+                    padding: 10px 15px;
+                    font-size: 12px;
+                    border: none;
+                    font-weight: 800;
+                    letter-spacing: 2px;
+                    transition: background-color 0.5s ease;
+
+                    &.copied{
+                        background-color: $orange;
+                        color: $white;
+                        transition: background-color 0.5s ease;
+                    }
+                }
+            }
+
+            .card-body{
+                padding: 15px;
+                .card-text{
+                    color: $grey;
+                    opacity: 0.7;
+                }
+            }
         }
     }
 }

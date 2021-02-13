@@ -1858,14 +1858,18 @@ $(document).on('submit', '.form-ajax', function () {
   });
   return false;
 });
-
-function setOption() {
+$(document).on('click', '.option', function () {
   var element = $(this);
   $('.option').removeClass('active');
   element.addClass('active');
-}
-
-$(document).on('click', '.option', setOption);
+});
+$(document).on('click', '.btn-copy', function () {
+  var element = $(this);
+  element.addClass('copied');
+  setTimeout(function () {
+    element.removeClass('copied');
+  }, 500);
+});
 
 /***/ }),
 
