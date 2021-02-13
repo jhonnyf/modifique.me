@@ -10,7 +10,12 @@
             <link href="{{ asset('css/vendor.min.css') }}" rel="stylesheet">
             <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">    
         @endif
-        <title>Modifique.me!</title>
+        <meta name="language" content="pt-BR">
+        <title>Modifique.me</title>
+        <meta name="description" content="Uma ferramenta pratica e confiável para modificar o seu texto, transformando-o em maiúsculo, minúsculo, e muitas outras funcionalidades">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Jhonny Fialho">
+        <meta name="keywords" content="texto maiúsculo, texto minúsculo, modificar texto, alterar texto, primeira letra maiúscula, edição de texto">
         @if (App::environment(['production']))
             <script data-ad-client="ca-pub-6071138168864836" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTKNL7MYFB"></script>
