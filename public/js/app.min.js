@@ -1861,7 +1861,7 @@ $(document).on('submit', '.form-ajax', function () {
 $(document).on('keyup', '#text', function () {
   var element = $(this);
   var characters = element.val().length;
-  var words = element.val().split(" ").length;
+  var words = element.val().trim().split(" ").length;
   $('.text-info .characters span').text(characters);
   $('.text-info .words span').text(words);
 });

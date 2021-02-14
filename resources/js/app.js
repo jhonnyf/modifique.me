@@ -25,7 +25,7 @@ $(document).on('keyup', '#text', function(){
     let element = $(this);
 
     let characters = element.val().length;
-    let words = element.val().split(" ").length;
+    let words = element.val().trim().split(" ").length;
 
     $('.text-info .characters span').text(characters);
     $('.text-info .words span').text(words);
