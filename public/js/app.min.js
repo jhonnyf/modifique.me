@@ -1858,6 +1858,11 @@ $(document).on('submit', '.form-ajax', function () {
   });
   return false;
 });
+$(document).on('keyup', '#text', function () {
+  var element = $(this);
+  var value = element.val().length;
+  $('.text-info .length span').text(value);
+});
 $(document).on('click', '.option', function () {
   var element = $(this);
   $('.option').removeClass('active');

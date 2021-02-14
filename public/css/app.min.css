@@ -147,6 +147,19 @@ main .actions .text-input {
     margin-bottom: 20px;
   }
 }
+main .actions .text-input textarea {
+  border-bottom: none;
+  display: block;
+  font-size: 13px;
+}
+main .actions .text-input .text-info {
+  background-color: #fff;
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #999;
+  border-right: 1px solid #999;
+  padding: 15px;
+  font-size: 13px;
+}
 main .actions .btn {
   background-color: #c5d7bd;
   padding: 10px 15px 10px 30px;

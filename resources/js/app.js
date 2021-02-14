@@ -21,6 +21,13 @@ $(document).on('submit', '.form-ajax', function () {
     return false;
 });
 
+$(document).on('keyup', '#text', function(){
+    let element = $(this);
+    let value = element.val().length;
+
+    $('.text-info .length span').text(value);
+});
+
 $(document).on('click', '.option', function(){
     let element = $(this);
 
