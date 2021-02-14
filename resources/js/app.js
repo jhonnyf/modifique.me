@@ -23,9 +23,12 @@ $(document).on('submit', '.form-ajax', function () {
 
 $(document).on('keyup', '#text', function(){
     let element = $(this);
-    let value = element.val().length;
 
-    $('.text-info .length span').text(value);
+    let characters = element.val().length;
+    let words = element.val().split(" ").length;
+
+    $('.text-info .characters span').text(characters);
+    $('.text-info .words span').text(words);
 });
 
 $(document).on('click', '.option', function(){

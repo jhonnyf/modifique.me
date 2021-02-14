@@ -159,6 +159,15 @@ main .actions .text-input .text-info {
   border-right: 1px solid #999;
   padding: 15px;
   font-size: 13px;
+  display: flex;
+  justify-content: space-around;
+}
+main .actions .text-input .text-info div {
+  font-weight: 500;
+  color: #383e56;
+}
+main .actions .text-input .text-info div span {
+  font-weight: bold;
 }
 main .actions .btn {
   background-color: #c5d7bd;
@@ -217,7 +226,7 @@ main .response-ajax .card .card-body .card-text {
 form textarea {
   width: 100%;
   padding: 15px;
-  height: 250px;
+  height: 200px;
   color: #444;
   border: 1px solid #999;
 }

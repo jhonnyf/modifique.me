@@ -72,9 +72,16 @@ main{
                 border-right: 1px solid #999;
                 padding: 15px;
                 font-size: 13px;
+                display: flex;
+                justify-content: space-around;
 
-                .length{
+                div{
+                    font-weight: 500;
+                    color: $blue;
 
+                    span{
+                        font-weight: bold;
+                    }
                 }
             }
         }

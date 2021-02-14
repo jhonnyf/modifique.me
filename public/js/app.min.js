@@ -1860,8 +1860,10 @@ $(document).on('submit', '.form-ajax', function () {
 });
 $(document).on('keyup', '#text', function () {
   var element = $(this);
-  var value = element.val().length;
-  $('.text-info .length span').text(value);
+  var characters = element.val().length;
+  var words = element.val().split(" ").length;
+  $('.text-info .characters span').text(characters);
+  $('.text-info .words span').text(words);
 });
 $(document).on('click', '.option', function () {
   var element = $(this);

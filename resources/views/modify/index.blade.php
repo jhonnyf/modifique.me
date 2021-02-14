@@ -42,8 +42,11 @@
             <div class="text-input">
                 <textarea name="text" id="text" required placeholder="Digite aqui o seu texto"></textarea>
                 <div class="text-info">
-                    <div class="length">
+                    <div class="characters">
                         Qtd. de caracteres <span>0</span>
+                    </div>
+                    <div class="words">
+                        Qtd. de palavras <span>0</span>
                     </div>
                 </div>                     
             </div>
